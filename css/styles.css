@@ -67,6 +67,9 @@ nav > ul> li> a{
     font-weight: 700;
     text-align: left;
 }
+.nav-image{
+    margin-right: -90px;
+}
 #home{
     color: rgb(254, 163, 1);
     font-size: 1.25rem;
@@ -124,6 +127,9 @@ nav > ul> li> a{
 
 
 /* Hero section related styles */
+.hero{
+    border-bottom: 1px dotted gray;
+}
 .hero-container{
     width: 1160px;
     margin: 0 auto;
@@ -155,6 +161,7 @@ nav > ul> li> a{
 /* Hero section styles for small devices */
 
 @media screen and (max-width: 576px) {
+    
     .hero-container{
         flex-direction: column-reverse;
         justify-content: center;
@@ -273,6 +280,11 @@ nav > ul> li> a{
     text-align: center;
     margin: 10px;
 }
+.nav-icon-img:hover{
+    transform: scale(1.5);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px rgba(70, 65, 65, 0.432);
+}
 
 /* Curriculum related styles for small device */
 
@@ -289,7 +301,7 @@ nav > ul> li> a{
         height: 100%;
     }
     .curriculum-item{
-        max-width: 357px;
+        max-width: 350px;
         max-height: 100%;
     }
     .curriculum-title{
@@ -399,6 +411,7 @@ nav > ul> li> a{
 
 /* Story related styles for small devices */
 @media screen and (max-width: 576px) {
+
     .cards-container{
         margin-top: 250px;
     }
@@ -474,10 +487,9 @@ nav > ul> li> a{
     .footer-item{
         margin: 0 auto;
         margin-right: 0%;
-        width: 330px;
+        width: 390px;
         height: auto;
         padding: 25px;
-        
     }
     #footer-description{
         width: 357px;
