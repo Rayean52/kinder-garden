@@ -16,6 +16,12 @@ body{
     font-weight: 600;
     text-align: center;
 }
+.primary-dark{
+    color: rgb(17, 17, 17);
+}
+.display-flex{
+    display: flex;
+}
 
 .hidden{
     display: none;
@@ -40,9 +46,6 @@ nav > ul> li> a{
     height: 62px;
     margin: 0 auto;
 
-}
-.nav-items{
-    display: flex;
 }
 .nav-title{
     font-size: 2.5rem;
@@ -88,7 +91,7 @@ nav > ul> li> a{
     margin-right: 0%;
 }
 
-/* Navbar styles for navbar section */
+/* Navbar styles for Small device */
 
 @media screen and (max-width: 576px) {
     .navbar{
@@ -101,5 +104,63 @@ nav > ul> li> a{
         border-bottom: 1px solid rgb(254, 163, 1);
         margin-top: 5px ;
         padding: 8px;
+    }
+}
+
+
+/* Hero section related styles */
+.hero-container{
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.hero-items{
+    margin-right: 25px;
+}
+
+.hero-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+.hero-description{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: left;
+}
+#empowering{
+    color: rgb(254, 163, 1);
+}
+#vision{
+    color: rgb(1, 172, 253);
+}
+
+/* Hero section styles for small devices */
+
+@media screen and (max-width: 576px) {
+    .hero-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 355px ;
+        height: auto;
+    }
+    .hero-items{
+        width: 335px;
+        max-height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    #hero-image{
+        max-width: 335px;
+        max-height: 410px;
+    }
+    .hero-title{
+        text-align: center;
+    }
+    .hero-description{
+        text-align: center;
     }
 }
