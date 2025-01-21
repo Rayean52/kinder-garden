@@ -343,7 +343,7 @@ nav > ul> li> a{
     font-weight: 500;
 
 }
-.story-title{
+.story-title{ 
     text-align: center;
     font-size: 3.25rem;
     font-weight: 700;
@@ -442,11 +442,49 @@ nav > ul> li> a{
     align-items: center;
     
 }
-.section-item{
+.footer-item{
     width: 1160px;
     height: 300px;
-    margin-left: 141px;
+    margin-left: 140px;
     margin-right: 228px;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+#footer-description{
+    width: 400px;
+}
+#footer-img{
+    width: 70px;
+    height: 80px;
+}
+.footer-bottom-image{
+    width: 40px;
+    width: 40px; 
+}
+
+/* footer related styles for small device */
+
+@media screen and (max-width: 576px) {
+    .footer{
+        flex-direction: column;
+    }
+    .marquee-tag{
+        display: none;
+    }
+    .footer-item{
+        margin: 0 auto;
+        margin-right: 0%;
+        width: 330px;
+        height: auto;
+        padding: 25px;
+        
+    }
+    #footer-description{
+        width: 357px;
+        height: 80px;
+    }
+    .footer-bottom-image{
+        width: 32px;
+        height: 32px;
+    }
 }
