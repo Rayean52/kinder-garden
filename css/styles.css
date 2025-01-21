@@ -22,6 +22,15 @@ body{
 .secondary-dark{
     color: rgb(128, 128, 128);
 }
+.green{
+    background-color: rgb(149, 178, 38);
+}
+.blue{
+    background-color: rgb(93, 88, 240);
+}
+.sky-blue{
+    background-color: rgb(60, 216, 232);
+}
 .display-flex{
     display: flex;
 }
@@ -292,4 +301,152 @@ nav > ul> li> a{
     .navigation-icon{
         display: none;
     }
+}
+
+/* story related styles */
+
+.story{
+    background: url(/assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.story-container{
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.cards-container{
+    gap: 30px;
+}
+.story-container > h3{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 35px;
+}
+.story-container > h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 38.35px;
+    letter-spacing: 0%;
+    margin-left: 35px;
+    
+}
+.story-container > p{
+    color: rgb(102, 102, 102);
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+.story-title{
+    text-align: center;
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.large-card{
+    width: 540px;
+    height: 590px;
+    background-color: whitesmoke;
+    border-radius: 16px;
+    text-align: center;
+}
+.large-card > img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.story-cards{
+    width: 290px;
+    height: 301;
+    background-color: whitesmoke;
+    border-radius: 16px;
+    text-align: center;
+}
+.story-cards > img{
+    width: 291px;
+    height: 177px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.item{
+    flex-direction: column;
+    height: 601px;
+    gap: 30px;
+}
+.btn{
+    color: white;
+    position: absolute;
+    margin-left: 38px;
+    margin-top: 157px;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+    border-radius: 50px;
+    margin-top: -20px;
+    border: none;
+
+}
+
+/* Story related styles for small devices */
+@media screen and (max-width: 576px) {
+    .cards-container{
+        margin-top: 250px;
+    }
+    .large-card{
+        display: none;
+    }
+    .story-cards > img{
+        width: 100%;
+        height: 105px;
+    }
+    .story-cards > h3{
+        font-size: 0.9rem;
+        font-weight: 600;
+        line-height: 17.12px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .story-cards{
+        width: 170px;
+        height: 180px;
+        
+    }
+    .btn{
+        position: absolute;
+        width: 110px;
+        height: 25px;
+        font-size: 0.6rem;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+}
+
+/* Footer related styles */
+.footer{
+    color: white;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.section-item{
+    width: 1160px;
+    height: 300px;
+    margin-left: 141px;
+    margin-right: 228px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
